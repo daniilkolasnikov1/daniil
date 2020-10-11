@@ -1,0 +1,60 @@
+header{
+  background-color:#66F906 ; /* Изменяем шапку сайта */
+}
+.header-text{ /*Изменяем текст шапки */
+  color:#000000;
+  text-align: center; /* Устанавливаем текст по центру */
+}
+.poem{
+  border: 2px solid  rgba(203, 224, 79, 1);
+  background: rgba(0,0,0,0.5);
+  margin-bottom: 25px; 
+}
+.butn{
+  width: 100%; /* Делаем кнопку на всю длину */
+}
+
+.allAuthors{
+	background-color: #06F999;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+
+#Authors{
+  float: left;
+}
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+body {
+  background-image: url(https://i.imgur.com/XKSzCib.jpg) ;
+  background-attachment: fixed;
+}
+
+.poem-title{
+color:#A8E4A0;
+}
+
+.poem-text{
+color: white;
+}

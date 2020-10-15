@@ -1,9 +1,10 @@
 $(document).ready(function() { 
-$('.Authors').hide();
-  $('#butnAuthor').click(function() {/* Делаем отрытие вкладки с авторами на нажатие кнопки автор */
-  $(".Authors").slideToggle(200);
+$('#Authors').hide();
+  $('#sidebar').hover(function() {/* Делаем отрытие вкладки с авторами на нажатие кнопки автор */
+  $("#Authors").toggle("slide",300);
   });
 });
+
 
 $(document).ready(function() {
 $('#Bunin').hide();
@@ -20,9 +21,9 @@ $('#Tutchev').hide();
 });
 
 $(document).ready(function() {
-$('#Vanshenkin').hide();
-  $('#butnVanshenkin').click(function() { /* Делаем открытие стихов ваншенкина */ 
-  $("#Vanshenkin").slideToggle(500);
+$('#Lermontov').hide();
+  $('#butnLermontov').click(function() { /* Делаем открытие стихов ваншенкина */ 
+  $("#Lermontov").slideToggle(500);
   });
 });
 
@@ -52,9 +53,9 @@ $('#TutchevPoem').hide();
   });
 });
 $(document).ready(function() {
-$('#VanshenkinPoem').hide();
-  $('#VanshenkinPoem-name').click(function() { /* Делаем открытие стихов пастернака */ 
-  $("#VanshenkinPoem").slideToggle(500);
+$('#LermontovPoem').hide();
+  $('#LermontovPoem-name').click(function() { /* Делаем открытие стихов пастернака */ 
+  $("#LermontovPoem").slideToggle(500);
   });
 });
 $(document).ready(function() {

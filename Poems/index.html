@@ -4,6 +4,7 @@
 	<script type="text/javascript"  src="js/jquery-3.5.1.js" ></script> <!-- Подключаем jquery.js -->
 	<script type="text/javascript" src="js/script.js"></script> <!-- Подключаем script.js -->
 	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Подключаем Bootstrap.js -->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/css.css">  <!--Подключаем Css -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> <!-- Подключаем Bootstrap.css -->
 	<meta charset="utf-8"><!-- Меняем кодировку -->
@@ -12,54 +13,77 @@
 <body>
 
 	<header>
+
 		<div class="header-text">
-			<h1>Топ-5 стихотворений</h1> <!-- Шапка сайта --> 
+			<div><img class="col-lg-1" id="logo" src="img/logo.png">
+				<span class="Header-Text">Топ стихотворений</span>
+			</div>
 		</div>
+
 	</header>
+	<div id="Search">
+		<nav>
+			<a class="active" href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<div class="search-box">
+				<form action="#">
+					<input type="text" placeholder="Поиск.." name="search">
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+		</nav>
+<div class="SideAuthors">
+		<span ><a href="https://ru.wikipedia.org/wiki/Бунин,_Иван_Алексеевич"><img class="Author-Img" src="img/Bunin.jpg"></a><br></span>
+		<span ><a href="https://ru.wikipedia.org/wiki/Тютчев,_Фёдор_Фёдорович"><img class="Author-Img" src="img/Tutchev.jpg"></a><br></span>
+		<span ><a href="https://ru.wikipedia.org/wiki/Лермонтов,_Михаил_Юрьевич"><img class="Author-Img" src="img/Lermontov.jpg"></a><br></span>
+		<span ><a href="https://ru.wikipedia.org/wiki/Некрасов,_Николай_Алексеевич"><img class="Author-Img"src="img/Nekrasov.jpg"></a><br></span>
+		<span ><a href="https://ru.wikipedia.org/wiki/Пастернак,_Борис_Леонидович"><img class="Author-Img"src="img/Pasternak.jpg"></a><br></span>
+</div>
+</div>
 
- <nav>
-  <a class="active" href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <div class="search-box">
-  <form action="#">
-    <input type="text" placeholder="Поиск.." name="search">
-    <button type="submit">Отправить</button>
-  </form>
-  </div>
-</nav>
-  <li class="content" id="Authors">
+	
 
-	<ul class="btn btn-primary butn allAuthors" id='butnAuthor'> 
-		Автор
-	</ul><br>
-	<ul class="btn btn-secondary butn Authors" id='butnBunin'>
-		Бунин	
-	</ul><br>
-	<ul class="btn btn-secondary butn Authors" id='butnTutchev'>
-		Тютчев
-	</ul><br>
-	<ul class="btn btn-secondary butn Authors" id='butnVanshenkin'>
-		Ваншенкин
-	</ul><br>
-	<ul class="btn btn-secondary butn Authors" id='butnNekrasov'>
-		Некрасов
-	</ul><br>
-	<ul class="btn btn-secondary butn Authors" id='butnPasternak'>
-		Пастернак
-	</ul><br>
-	<li>
+	
+	
+
+<div id='sidebar'>
+	<div class="content" id="Authors">
+
+		<span class="btn" id='butnAuthor'> 
+			Автор
+		</span><br>
+		<span class="btn btn-secondary butn Authors" id='butnBunin'>
+			Бунин	
+		</span><br>
+		<span class="btn btn-secondary butn Authors" id='butnTutchev'>
+			Тютчев
+		</span><br>
+		<span class="btn btn-secondary butn Authors" id='butnLermontov'>
+			Лермонтов
+		</span><br>
+		<span class="btn btn-secondary butn Authors" id='butnNekrasov'>
+			Некрасов
+		</span><br>
+		<span class="btn btn-secondary butn Authors" id='butnPasternak'>
+			Пастернак
+		</span><br>
+		<div>
+		</div>
+	</div>
+</div>
 <!-- Конец кнопок -->
 
-<a href="#" title="Вернуться к началу" class="topbutton">^обратно</a>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6"id="Bunin">	<!-- Указали сколько блоков занимает текст -->
-				<div class="poem">
-					<p>
-			<h5 class=poem-title id='BuninPoem-name'><a href="#">Листопад</a></h5>
 
-					<div class=poem-text id='BuninPoem'> Лес, точно терем расписной, <br>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6"id="Bunin">	<!-- Указали сколько блоков занимает текст -->
+			<div class="poem">
+				<p>
+					<h5 class=poem-title id='BuninPoem-name'><a href="#">Листопад</a></h5>
+
+					<div class=poem-text id='BuninPoem'> 
+						Лес, точно терем расписной, <br>
 						Лиловый, золотой, багряный,<br>
 						Веселой, пестрою стеной<br>
 						Стоит над светлою поляной.<br>
@@ -72,133 +96,139 @@
 						Лес пахнет дубом и сосной,<br>
 						За лето высох он от солнца,<br>
 						И Осень тихою вдовой<br>
-						Вступает в пестрый терем свой...<br> 
+						Вступает в пестрый терем свой...<br>
+
+						<a href="https://istihi.ru/bunin">Другие стихи автора</a>
 					</div>
-					</p>
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-6"id="Tutchev">	
+			<div class="poem"> 
+				<p>
+					<h5 class=poem-title id='TutchevPoem-name'><a href="#">Осенней позднею порою</a></h5>
+					<div class=poem-text id='TutchevPoem'>	Осенней позднею порою<br>
+						Люблю я царскосельский сад,<br>
+						Когда он тихой полумглою,<br>
+						Как бы дремотою, объят<br>
+						И белокрылые виденья<br>
+						На тусклом озера стекле<br>
+						В какой-то неге онеменья<br>
+						Коснеют в этой полумгле...<br>
+						И на порфирные ступени<br>
+						Екатерининских дворцов<br>
+						Ложатся сумрачные тени<br>
+						Октябрьских ранних вечеров —<br>
+						И сад темнеет, как дуброва,<br>
+						И при звездах из тьмы ночной,<br>
+						Как отблеск славного былого,<br>
+						Выходит купол золотой...<br>
+						<a href="https://istihi.ru/tyutchev">Другие стихи автора</a>
 					</div>
-				</div>
-				<div class="col-lg-6"id="Tutchev">	
-					<div class="poem"> 
-						<p>
-							<h5 class=poem-title id='TutchevPoem-name'><a href="#">Осенней позднею порою</a></h5>
-						<div class=poem-text id='TutchevPoem'>	Осенней позднею порою<br>
-							Люблю я царскосельский сад,<br>
-							Когда он тихой полумглою,<br>
-							Как бы дремотою, объят<br>
-							И белокрылые виденья<br>
-							На тусклом озера стекле<br>
-							В какой-то неге онеменья<br>
-							Коснеют в этой полумгле...<br>
-							И на порфирные ступени<br>
-							Екатерининских дворцов<br>
-							Ложатся сумрачные тени<br>
-							Октябрьских ранних вечеров —<br>
-							И сад темнеет, как дуброва,<br>
-							И при звездах из тьмы ночной,<br>
-							Как отблеск славного былого,<br>
-							Выходит купол золотой...<br>
-							</div>
-					</p>
-						</div>
-						</div>
-						<div class="col-lg-6"id="Vanshenkin">	
-							<div class="poem"> 
-								<p>
-									<h5 class=poem-title id='VanshenkinPoem-name'><a href="#">Осень</a></h5>
-								<div class=poem-text id='VanshenkinPoem'>	Был поздний ветер дюж,<br>
-									Нес пепел листьев прелых<br>
-									И муть, как из тарелок,<br>
-									Выплескивал из луж.<br>
-									Рябины рдела гроздь.<br>
-									А лес, густой недавно,<br>
-									Листвой блиставший славно,<br>
-									Стал виден всем насквозь.<br>
-									Он был как близкий дом,<br>
-									Где содраны обои,<br>
-									Нет ламп над головою,—<br>
-									Узнаешь, да с трудом.<br>
-									В различные концы,<br>
-									Сложив свои гардины<br>
-									И сняв свои картины,<br>
-									Разъехались жильцы.<br>
-									Струился дождь из мглы,<br>
-									Тянулся запах прели,<br>
-									И словно обгорели<br>
-									Намокшие стволы.<br>
-									О, милые дома!..<br>
-									Напрасно сердцу грустно:<br>
-									Все выправит искусно,<br>
-									Все выбелит зима.<br>
-									</div>
-					</p>
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-6"id="Lermontov">	
+			<div class="poem"> 
+				<p>
+					<h5 class=poem-title id='LermontovPoem-name'><a href="#">Осень</a></h5>
+					<div class=poem-text id='LermontovPoem'>	Был поздний ветер дюж,<br>
+						Пускай толпа клеймит презреньем<br>
+						Наш неразгаданный союз,<br>
+						Пускай людским предубежденьем<br>
+						Ты лишена семейных уз.<br>
 
-								</div>
-							</div>
-							<div class="col-lg-6"id="Nekrasov">	
-								<div class="poem"> 
-									<p>
-										<h5 class=poem-title id='NekrasovPoem-name'><a href="#">Перед дождем</h5>
-										<div class=poem-text id='NekrasovPoem'>Заунывный ветер гонит<br>
-										Стаю туч на край небес.<br>
-										Ель надломленная стонет,<br>
-										Глухо шепчет темный лес.<br>
-										На ручей, рябой и пестрый,<br>
-										За листком летит листок,<br>
-										И струей, сухой и острой;<br>
-										Набегает холодок.<br>
-										Полумрак на все ложится,<br>
-										Налетев со всех сторон,<br>
-										С криком в воздухе кружится<br>
-										Стая галок и ворон...<br>
-										</div>
-					</p>
-									</div>
-								</div>
-								<div class="col-lg-6"id="Pasternak">	
-									<div class="poem"> 
-										<p>
-											<h5 class=poem-title id='PasternakPoem-name'><a href="#">Золотая осень</h5>
-									<div class=poem-text id='PasternakPoem'>Осень. Сказочный чертог,<br>
-											Всем открытый для обзора.<br>
-											Просеки лесных дорог,<br>
-											Заглядевшихся в озера.<br>
-											Как на выставке картин:<br>
-											Залы, залы, залы, залы<br>
-											Вязов, ясеней, осин<br>
-											В позолоте небывалой.<br>
-											Липы обруч золотой —<br>
-											Как венец на новобрачной.<br>
-											Лик березы — под фатой<br>
-											Подвенечной и прозрачной.<br>
-											Погребенная земля<br>
-											Под листвой в канавах, ямах.<br>
-											В желтых кленах флигеля,<br>
-											Словно в золоченых рамах.<br>
-											Где деревья в сентябре<br>
-											На заре стоят попарно,<br>
-											И закат на их коре<br>
-											Оставляет след янтарный.<br>
-											Где нельзя ступить в овраг,<br>
-											Чтоб не стало всем известно:<br>
-											Так бушует, что ни шаг,<br>
-											Под ногами лист древесный.<br>
-											Где звучит в конце аллей<br>
-											Эхо у крутого спуска<br>
-											И зари вишневый клей<br>
-											Застывает в виде сгустка.<br>
-											Осень. Древний уголок<br>
-											Старых книг, одежд, оружья,<br>
-											Где сокровищ каталог<br>
-											</div>
-					</p>
+						Но перед идолами света<br>
+						Не гну колени я мои;<br>
+						Как ты, не знаю в нем предмета<br>
+						Ни сильной злобы, ни любви.<br>
 
-										</div>
-									</div>
+						Как ты, кружусь в веселье шумном,<br>
+						Не отличая никого:<br>
+						Делюся с умным и безумным,<br>
+						Живу для сердца своего.<br>
 
-								</div>
-								<footer>
+						Земного счастья мы не ценим,<br>
+						Людей привыкли мы ценить;<br>
+						Себе мы оба не изменим,<br>
+						А нам не могут изменить.<br>
 
-							</body>
+						В толпе друг друга мы узнали,<br>
+						Сошлись и разойдемся вновь.<br>
+						Была без радостей любовь,<br>
+						Разлука будет без печали.<br>
+						<a href="https://poemata.ru/poets/vanshenkin-konstantin/">Другие стихи автора</a>
+					</div>
+				</p>
+
+			</div>
+		</div>
+		<div class="col-lg-6"id="Nekrasov">	
+			<div class="poem"> 
+				<p>
+					<h5 class=poem-title id='NekrasovPoem-name'><a href="#">Перед дождем</h5></a>
+					<div class=poem-text id='NekrasovPoem'>Заунывный ветер гонит<br>
+						Стаю туч на край небес.<br>
+						Ель надломленная стонет,<br>
+						Глухо шепчет темный лес.<br>
+						На ручей, рябой и пестрый,<br>
+						За листком летит листок,<br>
+						И струей, сухой и острой;<br>
+						Набегает холодок.<br>
+						Полумрак на все ложится,<br>
+						Налетев со всех сторон,<br>
+						С криком в воздухе кружится<br>
+						Стая галок и ворон...<br>
+						<a href="https://istihi.ru/nekrasov">Другие стихи автора</a>
+					</div>
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-6"id="Pasternak">	
+			<div class="poem"> 
+				<p>
+					<h5 class=poem-title id='PasternakPoem-name'><a href="#">Золотая осень</h5></a>
+					<div class=poem-text id='PasternakPoem'>Осень. Сказочный чертог,<br>
+						Всем открытый для обзора.<br>
+						Просеки лесных дорог,<br>
+						Заглядевшихся в озера.<br>
+						Как на выставке картин:<br>
+						Залы, залы, залы, залы<br>
+						Вязов, ясеней, осин<br>
+						В позолоте небывалой.<br>
+						Липы обруч золотой —<br>
+						Как венец на новобрачной.<br>
+						Лик березы — под фатой<br>
+						Подвенечной и прозрачной.<br>
+						Погребенная земля<br>
+						Под листвой в канавах, ямах.<br>
+						В желтых кленах флигеля,<br>
+						Словно в золоченых рамах.<br>
+						Где деревья в сентябре<br>
+						На заре стоят попарно,<br>
+						И закат на их коре<br>
+						Оставляет след янтарный.<br>
+						Где нельзя ступить в овраг,<br>
+						Чтоб не стало всем известно:<br>
+						Так бушует, что ни шаг,<br>
+						Под ногами лист древесный.<br>
+						Где звучит в конце аллей<br>
+						Эхо у крутого спуска<br>
+						И зари вишневый клей<br>
+						Застывает в виде сгустка.<br>
+						Осень. Древний уголок<br>
+						Старых книг, одежд, оружья,<br>
+						Где сокровищ каталог<br>
+						<a href="https://istihi.ru/pasternak">Другие стихи автора</a>
+					</div>
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+	<div><a href="#" title="Вернуться к началу" class="topbutton">^обратно</a></div>
+</body>
 
 
-							</html>
+</html>

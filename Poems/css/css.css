@@ -1,9 +1,12 @@
 header{
-  background-color:#66F906 ; /* Изменяем шапку сайта */
+  background-color:#66F906;
+  
 }
 .header-text{ /*Изменяем текст шапки */
   color:#000000;
-  text-align: center; /* Устанавливаем текст по центру */
+  text-align: left; /* Устанавливаем текст по центру */
+  font-size: 40px;
+  font-family: "segoe print";
 }
 .poem{
   border: 2px solid  rgba(203, 224, 79, 1);
@@ -13,6 +16,8 @@ header{
 .butn{
   width: 100%; /* Делаем кнопку на всю длину */
 }
+
+
 
 .allAuthors{
 	background-color: #06F999;
@@ -46,6 +51,12 @@ border-radius: 5px;
 -webkit-border-radius: 5px;
 }
 
+#sidebar{
+  width: 100px;
+  height: 1000px;
+  float:left;
+}
+
 body {
   background-image: url(https://i.imgur.com/XKSzCib.jpg) ;
   background-attachment: fixed;
@@ -53,8 +64,31 @@ body {
 
 .poem-title{
 color:#A8E4A0;
+text-align: center;
 }
 
 .poem-text{
 color: white;
+text-align: center;
+}
+
+#butnAuthor{
+  background-color: yellow;
+  width: 100%;
+}
+
+#Search{
+  float: right;
+}
+
+.SideAuthors{
+  float: right;
+  width: 40%;
+
+}
+
+.Author-Img{
+  
+  width: 100%;
+  
 }

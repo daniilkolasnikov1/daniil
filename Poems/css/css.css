@@ -1,9 +1,9 @@
 header{
-  background-color:#66F906;
+  background-color:#290E85;
   
 }
 .header-text{ /*Изменяем текст шапки */
-  color:#000000;
+  color:#FFFFFF ;
   text-align: left; /* Устанавливаем текст по центру */
   font-size: 40px;
   font-family: "segoe print";
@@ -92,3 +92,4 @@ text-align: center;
   width: 100%;
   
 }
+
